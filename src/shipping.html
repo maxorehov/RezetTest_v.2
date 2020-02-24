@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		<form id="form">
+			<div class="form-label">
+				<label for="name">Name*</label>
+				<input id="name" type="text" name="name" placeholder="Enter your name">
+			</div>
+			<div class="form-label">
+				<label for="address">Address*</label>
+				<input id="address" type="text" name="address" placeholder="Enter your address">
+			</div>
+			<div class="form-label">
+				<label for="phone" >Phone</label>
+				<input id="phone" type="tel" name="phone" placeholder="+48">
+			</div>
+			<div class="form-label">
+				<label for="email">E-mail</label>
+				<input id="email"type="text" name="email" placeholder="Enter your email">
+			</div>
+			<div class="form-label">
+				<label for="shipping">Shipping options</label>
+				<select name="type" id="shipping">
+					<option value="Free shipping">Free shipping</option>
+					<option value="Express shipping - additional 9.99 €">Express shipping - additional 9.99 €</option>
+					<option value="Courier shipping - additional 19.99 €">Courier shipping - additional 19.99 €</option>
+				</select>
+			</div>
+			<button id="submit" type="submit">PAY</button>
+		</form>
+	</div>
+
+	<div class="overlay fade">
+		<div class="popup">
+			   <div class="popup-form">	
+				   <div class="main-form">
+					   <div class="popup-form-header">
+						  Congratulations! Your order has been successfully placed! 
+					   </div>
+						<a id='back' href="#">OK</a>
+				   </div>
+			   </div>
+		</div>
+</div>
+	<script src="js/shipping.js"></script>
+</body>
+</html>
